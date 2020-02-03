@@ -25,6 +25,12 @@ public class RightClickEnderPouchEvent {
 
         EntityPlayer player = e.getEntityPlayer();
 
+        // we don't want to handle this ourselves;
+        // leave it to the original mod
+        if (player.isSneaking()) {
+            return;
+        }
+
         if (ManaItemHandler.requestManaExact(enderPouch, player, COST_SELF, false)) {
             // hurray!
             ManaItemHandler.requestManaExact(enderPouch, player, COST_SELF, true);
