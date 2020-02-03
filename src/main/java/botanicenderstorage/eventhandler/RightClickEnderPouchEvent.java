@@ -6,7 +6,7 @@ import net.minecraft.init.SoundEvents;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
-import codechicken.enderstorage.item.ItemEnderPouch;
+import codechicken.enderstorage.init.ModItems;
 import vazkii.botania.api.mana.ManaItemHandler;
 
 public class RightClickEnderPouchEvent {
@@ -19,7 +19,7 @@ public class RightClickEnderPouchEvent {
 
         // check if the item is the ender pouch;
         // do nothing if it isn't
-        if (!(enderPouch.getItem() instanceof ItemEnderPouch)) {
+        if (enderPouch.getItem() != ModItems.enderPouch) {
             return;
         }
 
