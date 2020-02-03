@@ -15,7 +15,6 @@ public class RightClickEnderPouchEvent {
 
     @SubscribeEvent
     public static void rightClickEvent(PlayerInteractEvent.RightClickItem e) {
-        // check if player is holding anything at all
         ItemStack enderPouch = e.getItemStack();
 
         // check if the item is the ender pouch;
