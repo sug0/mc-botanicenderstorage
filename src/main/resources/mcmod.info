@@ -1,0 +1,16 @@
+[
+{
+  "modid": "botanicenderstorage",
+  "name": "BotanicEnderStorage",
+  "description": "Makes ChickenBone's ender pouches consume Botania mana.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["sugoiuguu"],
+  "credits": "Myself, ChickenBones, Vazkii & collaborators, Forge devs",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": ["Botania", "EnderStorage"]
+}
+]
